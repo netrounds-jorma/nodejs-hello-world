@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/fhinkel/nodejs-hello-world/issues"
   },
-  "homepage": "https://github.com/fhinkel/nodejs-hello-world#readme"
+  "homepage": "https://github.com/fhinkel/nodejs-hello-world#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "prom-client": "^11.2.0"
+  }
 }
