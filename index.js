@@ -37,6 +37,7 @@ injectMetricsRoute = function (App) {
         res.end(Register.metrics());
     });
 };
+app.use(requestCounters);  
 injectMetricsRoute(app);
 startCollection();
 
