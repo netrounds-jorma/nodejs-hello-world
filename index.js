@@ -4,6 +4,7 @@ const port = 8080
 
 app.get('/', (req, res) =>{
  res.send('Hello World!')
+ numOfRequests.inc({ method: req.method });
  next()
 })
 
@@ -29,7 +30,6 @@ startCollection = function () {
 requestCounters = function (req, res, next) {  
     if (req.path != '/metrics') {
         numOfRequests.inc({ method: req.method });
-        pathsTaken.inc({ path: req.path });
     }
     next();
 }
