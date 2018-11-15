@@ -2,8 +2,10 @@ const express = require('express')
 const app = express()
 const port = 8080 
 
-app.get('/', (req, res) => res.send('Hello World!'))
-
+app.get('/', (req, res) =>{
+ res.send('Hello World!'))
+ next()
+}
 
 var Register = require('prom-client').register;  
 var Counter = require('prom-client').Counter;  
